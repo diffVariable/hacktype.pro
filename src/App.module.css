@@ -1,0 +1,65 @@
+.page {
+  height: 100vh;
+  height: 100dvh;
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* when results are showing, let the whole page scroll if the panel is taller
+   than the viewport instead of trapping a scroll inside the panel */
+.scrollable {
+  height: auto;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow: visible;
+}
+
+.layout {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  max-width: 54rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hint {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--dim);
+  font-size: 0.8rem;
+}
+
+.hintKeys {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.kbd {
+  font-family: inherit;
+  font-size: 0.75rem;
+  color: var(--dim);
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.1rem 0.4rem;
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 0.85rem 0.75rem;
+  }
+
+  .hint {
+    justify-content: center;
+  }
+}

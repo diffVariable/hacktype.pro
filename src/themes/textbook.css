@@ -1,0 +1,28 @@
+[data-theme='textbook'] {
+  --bg: #0c0c0c; /* true black */
+  --surface: #0c0c0c; /* card blends into bg, separated by green border */
+  --surface2: #111511;
+  --border: #00ff4133;
+  --dim: #00ff4180;
+  --muted: #00ff414d;
+  --text: #00ff41; /* matrix green */
+  --accent: #00ff41;
+  --error: #ff3333;
+  --untyped: #00ff4140;
+  --prompt: #00ff41b3;
+  --font-mono: 'VT323', monospace;
+
+  /* VT323 renders smaller than JetBrains Mono, scale up roughly 1.25x */
+  --font-size-base: 20px;
+  --glow: 0 0 6px rgba(0, 255, 65, 0.4);
+  --scanlines: repeating-linear-gradient(
+    0deg,
+    rgba(0, 255, 65, 0.04) 0px,
+    rgba(0, 255, 65, 0.04) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  --dot-1: #00ff41;
+  --dot-2: #00ff4180;
+  --dot-3: #00ff414d;
+}

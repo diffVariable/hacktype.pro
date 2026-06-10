@@ -1,0 +1,59 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.label {
+  color: var(--dim);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.value {
+  color: var(--accent);
+}
+
+.dot {
+  margin: 0 0.4rem;
+  color: var(--muted);
+}
+
+.empty {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.25rem;
+  height: 2rem;
+}
+
+.bar {
+  flex: 1 1 0;
+  max-width: 0.8rem;
+  background: var(--accent);
+  opacity: 0.3;
+  border-radius: 2px 2px 0 0;
+  min-height: 2px;
+}
+
+.barLast {
+  opacity: 0.85;
+}

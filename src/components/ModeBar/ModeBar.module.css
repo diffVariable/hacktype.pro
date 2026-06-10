@@ -1,0 +1,31 @@
+.bar {
+  display: flex;
+  gap: 0.25rem;
+  align-self: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.25rem;
+}
+
+.tab {
+  color: var(--dim);
+  font-size: 0.85rem;
+  padding: 0.3rem 1rem;
+  border-radius: 999px;
+}
+
+.tab:hover {
+  color: var(--text);
+}
+
+.active {
+  color: var(--accent);
+  background: var(--surface2);
+}
+
+@media (max-width: 360px) {
+  .tab {
+    padding: 0.3rem 0.6rem;
+  }
+}

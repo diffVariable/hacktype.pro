@@ -1,0 +1,73 @@
+.line {
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.75;
+}
+
+.done {
+  opacity: 0.4;
+}
+
+.prompt {
+  color: var(--prompt);
+  user-select: none;
+}
+
+.indent {
+  user-select: none;
+}
+
+.correct {
+  color: var(--accent);
+}
+
+.wrong {
+  color: var(--error);
+  text-decoration: underline;
+}
+
+.untyped {
+  color: var(--untyped);
+}
+
+.doneText {
+  color: var(--accent);
+}
+
+.output .doneText {
+  color: var(--dim);
+}
+
+.cursor {
+  position: relative;
+}
+
+.cursor::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 12%;
+  bottom: 12%;
+  width: 2px;
+  background: var(--accent);
+  animation: blink 1s step-end infinite;
+}
+
+.enterHint {
+  color: var(--accent);
+  margin-left: 0.4rem;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor::before,
+  .enterHint {
+    animation: none;
+  }
+}

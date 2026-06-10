@@ -1,0 +1,16 @@
+{
+  "name": "hacktype",
+  "short_name": "hacktype",
+  "description": "A typing speed test disguised as a hacker terminal. Type through fake intrusion scripts like you are the hacker in a movie.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#221c24",
+  "theme_color": "#221c24",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ]
+}

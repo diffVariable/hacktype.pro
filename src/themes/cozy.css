@@ -1,0 +1,22 @@
+:root,
+[data-theme='cozy'] {
+  --bg: #221c24; /* charcoal plum page background */
+  --surface: #2d2630; /* terminal card */
+  --surface2: #352e38; /* terminal title bar, hover states */
+  --border: #3d3542;
+  --dim: #6b5f70; /* secondary text */
+  --muted: #4a3f4e; /* hints, faint text */
+  --text: #c9b8ce; /* primary text */
+  --accent: #e89bb1; /* dusty pink: cursor, correct chars, wpm number, buttons */
+  --error: #ff7070; /* wrong chars, soft red with underline */
+  --untyped: #5a4f5f; /* not yet typed chars */
+  --prompt: #9d8aa5; /* the rendered $ prompt */
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --font-size-base: 16px;
+  --glow: none;
+  --scanlines: none;
+  --dot-1: #d98a8a;
+  --dot-2: #d9c08a;
+  --dot-3: #93c39a;
+}

@@ -1,0 +1,170 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(3px);
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem 1.75rem;
+  max-width: 34rem;
+  width: 100%;
+}
+
+.title {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.subtitle {
+  margin: 0 0 1rem;
+  color: var(--dim);
+  font-size: 0.8rem;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.option:hover {
+  border-color: var(--accent);
+}
+
+.defaultOption {
+  border-color: var(--accent);
+}
+
+.optionName {
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.optionDesc {
+  color: var(--dim);
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
+/* mini live preview, themed via its own data-theme attribute */
+.preview {
+  display: block;
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  font-family: var(--font-mono);
+  margin-bottom: 0.4rem;
+}
+
+.previewBar {
+  display: flex;
+  gap: 0.25rem;
+  background: var(--surface2);
+  border-bottom: 1px solid var(--border);
+  padding: 0.3rem 0.4rem;
+}
+
+.previewDot1,
+.previewDot2,
+.previewDot3 {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+}
+
+.previewDot1 {
+  background: var(--dot-1);
+}
+
+.previewDot2 {
+  background: var(--dot-2);
+}
+
+.previewDot3 {
+  background: var(--dot-3);
+}
+
+.previewBody {
+  display: block;
+  white-space: pre;
+  padding: 0.5rem 0.6rem;
+  font-size: 0.7rem;
+  line-height: 1.7;
+  text-shadow: var(--glow);
+}
+
+.previewPrompt {
+  color: var(--prompt);
+}
+
+.previewAccent {
+  color: var(--accent);
+}
+
+.previewDim {
+  color: var(--dim);
+}
+
+.previewText {
+  color: var(--text);
+}
+
+.previewCursor {
+  display: inline-block;
+  width: 2px;
+  height: 0.75rem;
+  vertical-align: text-bottom;
+  margin-left: 1px;
+  background: var(--accent);
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .previewCursor {
+    animation: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .options {
+    grid-template-columns: 1fr;
+  }
+}

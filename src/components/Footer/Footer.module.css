@@ -1,0 +1,15 @@
+.footer {
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.link {
+  color: var(--dim);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--text);
+}
