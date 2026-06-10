@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import styles from './App.module.css';
 import { Footer } from './components/Footer/Footer';
 import { HistoryBars } from './components/HistoryBars/HistoryBars';
@@ -49,6 +50,7 @@ export function App() {
         <HistoryBars history={history} />
         <Footer />
       </div>
+      <Analytics />
     </div>
   );
 }
