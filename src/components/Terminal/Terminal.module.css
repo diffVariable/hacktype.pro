@@ -129,6 +129,42 @@
   }
 }
 
+.mobileErrorLine {
+  margin-bottom: 0.3rem;
+}
+
+.mobilePrompt {
+  color: var(--prompt);
+}
+
+.mobileCmd {
+  color: var(--text);
+}
+
+.mobileOutput {
+  color: var(--error);
+  white-space: pre;
+  margin-bottom: 0.15rem;
+}
+
+.mobileEscape {
+  display: inline-block;
+  margin-top: 1.4rem;
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--dim);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.mobileEscape:hover {
+  color: var(--accent);
+}
+
 @media (max-width: 480px) {
   .body {
     font-size: 0.9rem;
